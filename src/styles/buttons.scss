@@ -1,0 +1,131 @@
+// do not erase ".mad-button"
+// added to prevent conflict with datepicker and else
+button.mad-button {
+  font-family: 'Chakra Petch', sans-serif !important;
+  border-radius: 999px !important;
+  text-transform: inherit !important;
+  min-width: 100px !important;
+  min-height: 40px !important;
+  @apply px-6 py-[10px];
+
+  &.text-button-square {
+    min-width: max-content !important;
+    border-radius: 0px !important;
+    @apply px-1;
+  }
+
+  &.filled-button {
+    @apply flex items-center text-white bg-primary-dark hover:shadow-elevation-dark-1;
+
+    svg {
+      @apply -ml-2 mr-2;
+    }
+    &.button-dark {
+      @apply text-white/[.6] bg-background-dark-600;
+    }
+    &.Mui-disabled,
+    .disabled {
+      @apply text-[#EBE0E1]/[0.38] bg-[#E3E3E3]/[0.12];
+    }
+  }
+  &.tonal-button {
+    @apply flex items-center text-white bg-primary-dark hover:shadow-elevation-dark-1;
+
+    svg {
+      @apply -ml-2 mr-2;
+    }
+
+    &.Mui-disabled,
+    .disabled {
+      @apply text-[#EBE0E1]/[0.38] bg-[#E3E3E3]/[0.12];
+    }
+
+    &.none-active {
+      @apply bg-transparent shadow-none text-white;
+    }
+  }
+
+  &.outlined-button {
+    min-width: 100px !important;
+    @apply text-secondary-60 border-outlined-normal border-[#6F7978] flex items-center;
+    // @apply
+    @apply hover:border-archive-Neutral-Variant60 hover:bg-dark-opacity/[0.08];
+
+    &.light {
+      @apply text-primary-dark;
+      @apply hover:bg-light-opacity/[0.08] focus:bg-light-opacity/[0.14] focus:border-primary-dark;
+    }
+    &.dark {
+      @apply text-secondary-60;
+      @apply hover:border-archive-Neutral-Variant60 hover:bg-dark-opacity/[0.08] focus:bg-dark-opacity/[0.14];
+    }
+
+    svg {
+      @apply -ml-2 mr-2;
+    }
+  }
+  &.text-button {
+    @apply flex items-center;
+    // @apply
+    @apply hover:bg-primary-dark/[0.1];
+
+    &.light {
+      @apply text-primary-60 hover:bg-light-opacity/[0.08] focus:bg-light-opacity/[0.14];
+    }
+    &.dark {
+      @apply text-secondary-60;
+      @apply hover:border-archive-Neutral-Variant60 hover:bg-dark-opacity/[0.08] focus:bg-dark-opacity/[0.14];
+    }
+
+    svg {
+      @apply -ml-2 mr-2;
+    }
+  }
+}
+
+// big button
+button.big-button {
+  text-transform: inherit !important;
+  min-width: 100px !important;
+  min-height: 40px !important;
+  @apply px-6 py-[10px];
+
+  &.big-button.MuiButton-root {
+    @apply border-primary-dark text-primary-dark p-5;
+
+    &.Mui-disabled {
+      @apply border-archive-Neutral-Variant30 text-archive-Neutral-Variant30;
+    }
+  }
+  &.big-button-text.MuiButton-root {
+    @apply border-[#4B526A] text-archive-Neutral-Variant30 py-5 px-8;
+
+    &.Mui-disabled {
+      @apply border-archive-Neutral-Variant30 text-archive-Neutral-Variant30;
+    }
+  }
+  &.big-button-text-select.MuiButton-root {
+    @apply border-[#F4B1A3] text-white py-5 px-8;
+
+    &.Mui-disabled {
+      @apply border-archive-Neutral-Variant30 text-archive-Neutral-Variant30;
+    }
+  }
+}
+
+// Homepage
+.drop-homepage-view-more,
+.drop-single,
+.mad-galleries-section {
+  button.MuiButton-root {
+    @apply text--label-large  text-background-dark-600;
+
+    &:hover {
+      @apply border-primary-dark;
+    }
+  }
+}
+
+.text-transform-inherit {
+  text-transform: inherit;
+}

@@ -1,0 +1,59 @@
+.title-step {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  color: #ffffff;
+  padding-bottom: 32px;
+}
+
+.menu-duration {
+  width: 100%;
+  @media screen and (max-width: 960px) {
+    ul {
+      width: calc(100vw - 32px);
+      max-height: 70vh;
+    }
+  }
+
+  div.MuiBox-root {
+    @media screen and (max-width: 960px) {
+      width: 95%;
+    }
+  }
+
+  .MuiCalendarPicker-root {
+    @media screen and (max-width: 960px) {
+      width: 100%;
+    }
+  }
+}
+
+.custom-input-active {
+  @media screen and (max-width: 960px) {
+    .MuiTextField-root {
+      background-color: #2f2f2f !important;
+    }
+    border-radius: 4px 4px 0px 0px !important;
+    label {
+      color: rgba(255, 255, 255, 0.38) !important;
+    }
+  }
+}
+
+.custom-input-inactive {
+  @media screen and (max-width: 960px) {
+    .MuiTextField-root {
+      background: #373d4a !important;
+    }
+    border-radius: 4px 4px 0px 0px;
+    label {
+      color: #f4b1a3 !important;
+    }
+  }
+}
+
+.custom-field {
+  .MuiFilledInput-root {
+    background-color: #3E3F4D !important;
+  }
+}

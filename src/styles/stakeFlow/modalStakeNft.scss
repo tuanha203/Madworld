@@ -1,0 +1,61 @@
+.modal-stake-nft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 680px;
+  height: 414px;
+  border-radius: 28px;
+  padding: 0;
+
+  .card-item {
+    width: 612px;
+  }
+  
+  .modal-bottom {
+    width: 680px;
+    height: 195px;
+    border-radius: 0 0 28px 28px;
+  }
+}
+
+.modal-not-enough-umad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 680px;
+  height: 439px;
+  border-radius: 28px;
+  padding: 0;
+
+  .card-item {
+    width: 615px;
+  }
+  
+  .modal-bottom {
+    width: 680px;
+    height: 221px;
+    border-radius: 0 0 28px 28px;
+  }
+}
+
+
+// card-item 
+.card-item {
+  figure{
+    img {
+      @apply rounded-md;
+    }
+  }
+}
+
+.listing {
+  @apply h-[200px] flex flex-col gap-2 my-2 overflow-y-scroll;
+}
+
+.item-number {
+  @apply text--headline-xsmall text-white;
+}
+
+.upper-part {
+  @apply px-8 pt-8;
+}

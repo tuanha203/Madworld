@@ -1,0 +1,69 @@
+{
+    "addresses": {
+        "ETH": {
+            "mainStore": "0x28ce8c045e94e61c57afc7a1Ed58c9A0a4065f91",
+            "exchange": "0x9d8433c5Cfca16dC4242e6E09f64777Fea219d5A",
+            "registry": "0xB20fc46CB9b2b5155d7555520262a6DBCB3CcA78",
+            "factory": "0x3c97CEf317F7e0148662Ad9930371A7012866f2a",
+            "proxy": "0x45fc0805904A7EB82AC8738c149832230b48f7E8",
+            "usdt": "0xDf74159D6cBa3D184D124a2c9DeE0f4eD0123B95",
+            "xtr": "0xf1422E1A4024191D9D02D2808e7abAc3F87A746a",
+            "weth": "0xC9BFE8f08f12ca05d44FBcC45aa60DdDC213cca8"
+        },
+        "BSC": {
+            "mainStore": "0x21Ecca24E5E8Ebed04164b257F37E524aa9E11Ea",
+            "exchange": "0x9eF5a29Eef7f1187C4328A5c94d7dDd12FebD92C",
+            "registry": "0x469dBC6DDC40a002328900bCaF3C6b335dDF80D2",
+            "factory": "0x0749bF948613dFaDf5fcD2564B8Dd9f8f0333390",
+            "proxy": "0xc8425B9d3954162967d744e749291d881C757451",
+            "xtr": "0x36a444B87574C4d558e1d413f51E77809A8CD05f",
+            "busd": "0x8bA629ad1582d3ee0E4dABED61A1C4f2C824edd8",
+            "wbnb": "0xd420f9EE5be9064B3eE7cfdD84D05a01eAdf1890"
+        }
+    },
+    "recipientFeeAddress": "0x832E5A3eeA4B3e285a071DDB82Ddcd67Ad39FEB9",
+    "infuraApiKey": "6dd6484e21ac444daba5d006ac7438c8",
+    "fortmaticKey": "pk_test_2C56B1E56794D993",
+    "metamaskDeepLink": "https://metamask.app.link/dapp/test-xtrem.sotatek.works",
+    "verifyLink": "https://bit.ly/VindergoodVerificationRequestGoogleForm",
+    "tweetTwitterLink": "https://twitter.com/intent/tweet",
+    "server": {
+        "url": "https://be.api.xtrem.sotatek.works",
+        "urlV1": "https://be.api.xtrem.sotatek.works/api/v1",
+        "gatewayUrl": "https://nc5s1765pl.execute-api.eu-west-1.amazonaws.com/Stage",
+        "cloudfrontUrl": "https://d1j89spu4jqwcb.cloudfront.net"
+    },
+    "networks": {
+        "BSC": {
+            "id": 97,
+            "chainId": "0x61",
+            "nativeCurrency": {
+                "name": "BNB",
+                "symbol": "BNB",
+                "decimals": 18
+            },
+            "rpcUrls": [
+                "https://data-seed-prebsc-1-s1.binance.org:8545/",
+                "https://data-seed-prebsc-2-s1.binance.org:8545/",
+                "https://data-seed-prebsc-1-s2.binance.org:8545/",
+                "https://data-seed-prebsc-2-s2.binance.org:8545/",
+                "https://data-seed-prebsc-1-s3.binance.org:8545/",
+                "https://data-seed-prebsc-2-s3.binance.org:8545/"
+            ],
+            "chainName": "Binance Smart Chain TESTNET",
+            "blockExplorerUrls": ["https://testnet.bscscan.com"]
+        },
+        "ETH": {
+            "id": 4,
+            "chainId": "0x4",
+            "nativeCurrency": {
+                "name": "ETH",
+                "symbol": "ETH",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://rinkeby.infura.io/v3/6dd6484e21ac444daba5d006ac7438c8"],
+            "chainName": "Rinkeby Ethereum TESTNET",
+            "blockExplorerUrls": ["https://rinkeby.etherscan.io"]
+        }
+    }
+}

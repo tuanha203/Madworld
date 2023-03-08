@@ -1,0 +1,62 @@
+{
+    "addresses": {
+        "ETH": {
+            "mainStore": "0x78cE38Bb6f9ceE248Ff265Ff92d524D22ea08DDF",
+            "exchange": "0x27E8e885E8797c1b1CAb064fA222685aCeC4F8e9",
+            "registry": "0x8dc357f07Dec511DA92BD1D7BA07AD4a2706f68E",
+            "factory": "0x8B2F8970745801001B7989dC2c9767Cf94F4F42F",
+            "proxy": "0x00ebD18bc10019e00cC040b5Af757d091af9ab60",
+            "xtr": "0x9ee45adbb2f2083ab5cd9bc888c77a662dbd55fe",
+            "usdt": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+            "weth": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+        },
+        "BSC": {
+            "mainStore": "0x6D69a0BF3300DD01B7Fc582AF2e146F31c1e6757",
+            "exchange": "0xE90cB0e8b1eeEaF45cC086c34f01655E0812df2C",
+            "registry": "0x577eB6D6d39f8Be6014DaDeFf2Ece4d1A2AeE7b2",
+            "factory": "0xd016Da6841412E1636a5daf4723b39a095D490dD",
+            "proxy": "0x7313AC05704035A300b0bD50976E7A83c69b2552",
+            "xtr": "0x5ecfcced226ba9fccd8663e7b3263cbd8c84edb5",
+            "busd": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+            "wbnb": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+        }
+    },
+    "recipientFeeAddress": "0xdcc88283Da6aD742b5e420b59E057F3800Dda594",
+    "infuraApiKey": "5b93acd936864df3a1bd78c7de311458",
+    "fortmaticKey": "pk_live_786DFF7002B3153E",
+    "metamaskDeepLink": "https://metamask.app.link/dapp/vindergoood.com",
+    "verifyLink": "https://bit.ly/VindergoodVerificationRequestGoogleForm",
+    "tweetTwitterLink": "https://twitter.com/intent/tweet",
+    "server": {
+        "url": "https://mainapi.vindergood.com",
+        "urlV1": "https://mainapi.vindergood.com/api/v1",
+        "gatewayUrl": "https://gateway.vindergood.com",
+        "cloudfrontUrl": "https://mediapi.vindergood.com"
+    },
+    "networks": {
+        "BSC": {
+            "id": 56,
+            "chainId": "0x38",
+            "nativeCurrency": {
+                "name": "BNB",
+                "symbol": "BNB",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://bsc-dataseed.binance.org/"],
+            "chainName": "Binance Smart Chain",
+            "blockExplorerUrls": ["https://bscscan.com"]
+        },
+        "ETH": {
+            "id": 1,
+            "chainId": "0x1",
+            "nativeCurrency": {
+                "name": "ETH",
+                "symbol": "ETH",
+                "decimals": 18
+            },
+            "rpcUrls": ["https://mainnet.infura.io/v3/5b93acd936864df3a1bd78c7de311458"],
+            "chainName": "Ethereum Mainnet",
+            "blockExplorerUrls": ["https://etherscan.io"]
+        }
+    }
+}

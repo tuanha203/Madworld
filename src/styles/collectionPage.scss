@@ -1,0 +1,61 @@
+.collection-single-page {
+    .card-listing {
+        grid-template-columns: repeat(auto-fill, minmax(265px, 1fr)); 
+        @apply w-full grid gap-6 ;
+    }
+}
+
+.nft-card {
+    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%, 0 6%);
+    &-mb {
+        clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+    }
+}
+.nft-card-common {
+    clip-path: polygon(9.4% 0, 100% 0, 100% 100%, 0 100%, 0 6.5%);
+    position: relative;
+    background-image: url('../../public//images//border-image.png');
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.flagship-card-common {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    border-radius: 16px;
+}
+.nft-card-back {
+    clip-path: polygon(9.4% 0, 100% 0, 100% 100%, 0 100%, 0 6.5%);
+}
+
+.box-shadow-card {
+    box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.3));
+}
+
+.clip-path-image-nft {
+    clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%, 0 6%);
+}
+
+.flagship-card-bg {
+    clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%, 0 6%);
+    border-radius: 8px;
+    border-top-left-radius: 16px;
+}
+.flagship-card-img {
+    clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%, 0 6%);
+    border-radius: 8px;
+    border-top-left-radius: 16px;
+}
+
+.divide-hr {
+    position: absolute;
+    background: #646B7A99;
+    bottom: 0;
+    height: 1px;
+    left: 20px;
+    width: calc(100% - 20px);
+}

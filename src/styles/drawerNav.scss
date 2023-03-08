@@ -1,0 +1,29 @@
+.drawerNav {
+  & .MuiDrawer-paper {
+    @apply bg-background-asset-detail w-full;
+  }
+
+  .content {
+    height: 100%;
+    @apply pb-6;
+    //custom scroll bar
+    /* width */
+    &::-webkit-scrollbar {
+      @apply w-3;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+      @apply bg-background-700 rounded-md;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      @apply rounded-md;
+      border-right: 4px #373d4a solid;
+      border-left: 4px #373d4a solid;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      @apply bg-background-scroll-bar;
+    }
+  }
+}

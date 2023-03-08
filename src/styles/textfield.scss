@@ -1,0 +1,187 @@
+.text-field {
+  &.dark {
+    label {
+      @apply text-white/[0.6];
+      &.Mui-focused {
+        @apply text-primary-90;
+      }
+    }
+    .Mui-focused {
+      & + p {
+        &.Mui-error {
+          @apply text-error-60;
+        }
+
+        @apply text-primary-90;
+      }
+    }
+    p {
+      &.Mui-error {
+        @apply text-error-60;
+      }
+      margin: 0;
+      @apply pt-1 text-white/[0.6];
+    }
+    input, textarea {
+      color: white;
+    }
+    button {
+      @apply text-primary-dark;
+    }
+
+    .heart-icon {
+      position: absolute;
+      left: 5px;
+      svg {
+        @apply text-primary-dark;
+      }
+    }
+
+    &.text-field-outlined {
+      .MuiOutlinedInput-notchedOutline {
+        @apply border-white/[0.6];
+      }
+      .Mui-focused + .MuiOutlinedInput-root {
+        .MuiOutlinedInput-notchedOutline {
+          @apply border-primary-dark;
+        }
+      }
+    }
+  }
+  &.light {
+    label {
+      @apply text-black;
+      &.Mui-focused {
+        @apply text-primary-60;
+      }
+    }
+    p {
+      @apply bg-white/[0.04] px-5 pt-1 text-primary-60;
+      margin: 0;
+    }
+    input {
+      color: #000;
+    }
+    button {
+      @apply text-primary-60;
+    }
+
+    .heart-icon {
+      position: absolute;
+      left: 5px;
+      svg {
+        @apply text-primary-60;
+      }
+    }
+    .Mui-focused {
+      & + p {
+        @apply text-primary-60;
+      }
+    }
+    &.text-field-outlined {
+      .MuiOutlinedInput-notchedOutline {
+        @apply border-primary-60;
+      }
+      .Mui-focused + .MuiOutlinedInput-root {
+        .MuiOutlinedInput-notchedOutline {
+          @apply border-primary-60;
+        }
+      }
+    }
+  }
+
+  .text-field-label {
+    @apply ml-6;
+  }
+
+  &.text-field-filled {
+    @apply rounded-t-lg;
+    &.dark {
+      .MuiFilledInput-root {
+        @apply bg-background-dark-input;
+      }
+    }
+    &.dark-2 {
+      @extend .dark;
+      .MuiFilledInput-root {
+        background-color: #4B525D;
+      }
+    }
+    &.light {
+      @apply bg-white/[0.04];
+    }
+
+    .MuiFilledInput-root::after {
+      @apply border-primary-60;
+    }
+  }
+
+  &.text-field-icon {
+    input {
+      @apply ml-6;
+    }
+  }
+}
+
+.search-text-field-paper {
+  @apply h-8;
+  @apply bg-background-dark-600 border-[1px] border-solid border-[#585858] p-0;
+
+  div.MuiInputBase-root {
+    @apply text--body-medium text-archive-Neutral-Variant60;
+  }
+
+  svg {
+    @apply  scale-75;
+  }
+}
+
+.text-field-type {
+  padding-right: 0;
+  input {
+    border-right: 1px solid #6a7290;
+    padding-right: 12px;
+  }
+}
+
+.remove-border-radius-top-right {
+  border-top-right-radius: 0 !important;
+}
+
+.remove-border-radius-top-left {
+  border-top-left-radius: 0 !important;
+}
+
+.select-field {
+  .MuiSelect-icon {
+    color: #1efcf1;
+  }
+}
+
+input:placeholder-shown {
+  text-overflow: ellipsis;
+}
+
+.text-field-formik {
+  padding: 18px 24px;
+  background: #373D4A;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Chakra Petch';
+  line-height: 20px;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.text-area-custom {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 16px;
+  background: #3E3F4D;
+  border-radius: 4px 4px 0px 0px;
+  outline: none;
+  font-family: Chakra Petch;
+}

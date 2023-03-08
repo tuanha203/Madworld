@@ -1,0 +1,108 @@
+.Bduck-pool-horizontal {
+  @apply w-full flex justify-between p-4 rounded-lg bg-background-dark-600 shadow-elevation-dark-1 z-30;
+  // @apply max-w-[1128px];
+
+  .avatar {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .data {
+    @apply text-center;
+  }
+  .title {
+    @apply text--headline-xsmall w-[200px];
+  }
+
+  .state {
+    @apply flex flex-col justify-center items-center;
+    @apply text--title-medium;
+
+    .approve {
+      @apply text-secondary-green;
+    }
+    .stake {
+      @apply text-primary-dark;
+    }
+    .soon {
+      @apply text-primary-yellow;
+    }
+    .end {
+      @apply text-error-50;
+    }
+  }
+
+  .arrow {
+    @apply flex flex-col justify-center items-center;
+  }
+}
+
+.bduck-pool-wrapper {
+  .col {
+    @apply flex flex-col gap-1;
+
+    .caption {
+      @apply text--label-small text-secondary-70;
+
+      svg.MuiSvgIcon-root {
+        width: 16px;
+      }
+
+      button.MuiButton-root {
+        min-width: 20px;
+        width: 20px
+      }
+    }
+
+    .data {
+
+      figure {
+        width: 16px !important;
+      }
+
+      h2,
+      .index {
+        @apply text--title-medium text-white;
+
+      }
+
+      h3 {
+        @apply text-center text--label-small text-on-secondary-container;
+      }
+    }
+  }
+}
+
+.asset-wrapper {
+  @apply -mt-[6px] h-[152px] flex flex-col items-center w-full justify-center m-auto rounded-lg bg-background-dark-500 shadow-elevation-light-3;
+
+  .asset-ov-list {
+    @apply w-full pl-28 pr-14 flex justify-between items-start;
+
+    .col {
+        @apply pt-5;
+    }
+  }
+  hr {
+    @apply h-11 my-auto;
+  }
+}
+
+
+// pool status 
+.state {
+  @apply flex justify-center items-center;
+  @apply text--title-medium;
+
+  .approve {
+    @apply text-secondary-green;
+  }
+  .stake {
+    @apply text-primary-dark;
+  }
+  .soon {
+    @apply text-primary-yellow;
+  }
+  .end {
+    @apply text-error-50;
+  }
+}

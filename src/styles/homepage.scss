@@ -1,0 +1,161 @@
+// Homepage MAD Galleries
+.mad-galleries-filtering.MuiFormControlLabel-root {
+  @apply capitalize mx-0 gap-2;
+
+  .MuiTypography-root {
+    @apply text--label-large px-2 py-[10px];
+    @apply border-b-2 border-transparent;
+    @apply hover:text-primary-dark;
+  }
+
+  .MuiSvgIcon-root {
+    @apply hidden;
+  }
+
+  .MuiRadio-root.Mui-checked ~ .MuiTypography-root {
+    @apply text-primary-dark border-b-2 border-primary-dark;
+  }
+}
+.collection-listing-homepage,
+.treding-listing {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.drop-listing-homepage {
+  margin: 0px 10px 0px 10px;
+}
+.drop-listing-homepage-wrapper {
+  overflow: hidden;
+  .react-multi-carousel-list {
+    overflow: visible !important;
+  }
+  .react-multiple-carousel__arrow--left {
+    left: 0px !important;
+    z-index: 0 !important;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    right: 0px !important;
+    z-index: 0 !important;
+  }
+}
+
+.react-multiple-carousel__custom--right {
+  right: 0px !important;
+  z-index: 0 !important;
+  width: 24px;
+  height: 24px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 10px !important;
+  z-index: 0 !important;
+  width: 24px;
+  height: 24px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.react-multiple-carousel__custom {
+  position: absolute;
+  outline: 0;
+  transition: all 0.5s;
+  border-radius: 35px;
+  z-index: 1000;
+  border: 0;
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 43px;
+  min-height: 43px;
+  opacity: 1;
+  cursor: pointer;
+  background-color: unset;
+}
+
+.artist-carousel {
+  overflow: hidden;
+  .react-multi-carousel-list {
+    overflow: visible !important;
+  }
+  .react-multiple-carousel__arrow--left {
+    left: 10px !important;
+    z-index: 0 !important;
+    width: 24px;
+    height: 24px;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    right: 10px !important;
+    z-index: 0 !important;
+    width: 24px;
+    height: 24px;
+    min-width: 0;
+    min-height: 0;
+  }
+  .react-multiple-carousel__arrow::before {
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
+
+.branded-collections-homepage {
+  .swiper-slide {
+    @apply bg-transparent;
+  }
+  .listing-grid {
+    @apply grid gap-4;
+    grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+//Homepage Branded Collection swiper slider
+.branded-collections-homepage {
+  .swiper {
+    width: 100%;
+    height: 80%;
+  }
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  div.swiper-pagination {
+    @apply bottom-0;
+  }
+  .swiper-pagination-bullet {
+    @apply bg-white rounded-lg w-[106px] h-[5px] opacity-100;
+  }
+  .swiper-pagination-bullet-active {
+    @apply bg-primary-dark;
+  }
+}
+
+.continous {
+  .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    height: calc((100% - 30px) / 2) !important;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.bg-drop{
+  background-image: url('../../public/images/spiral.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: inherit;
+}

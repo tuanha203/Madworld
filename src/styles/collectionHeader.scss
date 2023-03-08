@@ -1,0 +1,45 @@
+.collection-header {
+    .collection-cover {
+        @apply w-full h-[154px] overflow-hidden;
+
+        img {
+            @apply w-full h-full object-cover;
+        }
+    }
+    .avatar-wrapper {
+        @apply -mt-8;
+        figure {
+            @apply translate-y-[-50%]; 
+        }
+    }
+    .collection-header-content {
+        @apply w-full;
+        .header-title {
+            @apply text--headline-small text-white;
+        }
+        .website {
+            @apply text--title-small text-primary-dark;
+             p {
+                 @apply my-4 ;
+             }
+        }
+        .description {
+            @apply text--body-medium text-gray-c4 w-[400px]  text-sm;
+        }
+        .user-target {
+            @apply text-primary-dark text--title-medium;
+        }
+    }
+}
+
+.description-text {
+    @apply text--body-medium text-gray-c4  text-sm;
+    letter-spacing: initial
+}
+
+.custom-avatar-full-screen {
+    span:first-child {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}

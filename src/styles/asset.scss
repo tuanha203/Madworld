@@ -1,0 +1,236 @@
+.collection-view {
+  .asset-title {
+    font-weight: 700;
+    font-family: 'Chakra Petch', sans-serif !important;
+  }
+}
+
+.product-detail-card-hiden {
+  width: 264px;
+}
+
+.no-data {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  flex-direction: column;
+
+  label {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff61;
+    padding-top: 31px;
+  }
+}
+
+.custom-icon {
+  margin: 8.5px -3px;
+}
+
+.banner {
+  background: #555b69;
+}
+
+.img-contain {
+  object-fit: contain;
+}
+
+.react-multiple-carousel__arrow::before {
+  color: black !important;
+}
+
+model-viewer {
+  width: 100%;
+  height: 100%;
+  --poster-color: #1D1C29;
+  --progress-bar-color: #f4b1a3;
+}
+
+.carousel-card-wrapper {
+  margin: 0 10px;
+}
+
+.carousel-wrape {
+  margin: 28px -1vw 0 -1vw;
+  overflow: hidden;
+  .react-multi-carousel-list {
+    overflow: visible !important;
+  }
+  &__carousel {
+    margin: 16px 10px 50px 10px;
+  }
+  &--view {
+    // height: 388px;
+    &__high {
+      // height: 388px;
+    }
+    &__low {
+      height: 270px;
+    }
+  }
+}
+
+.wrap-carousel-artist {
+  overflow: hidden;
+  padding-left: 10px;
+  .react-multi-carousel-list {
+    overflow: visible !important;
+    & > button.react-multiple-carousel__arrow--right {
+      right: 0px !important;
+    }
+  }
+}
+
+.react-multiple-carousel__arrow--left {
+  left: -8px !important;
+  z-index: 0 !important;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: -8px !important;
+  z-index: 0 !important;
+}
+
+.MuiBox-root .MuiTabs-scroller .MuiTabs-flexContainer {
+  gap: 3px !important;
+
+  .Mui-selected {
+    color: #b794f6;
+  }
+}
+
+.refreshBtn {
+  animation: refreshBtnLoading 0.3s linear infinite;
+}
+
+@keyframes refreshBtnLoading {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.collapse-open {
+  max-height: 0;
+  transition: max-height 0.4s;
+  overflow: hidden;
+}
+
+.collapse-close {
+  max-height: 175px;
+  transition: max-height 0.4s;
+}
+
+.collapse-open-utility {
+  max-height: 200px;
+  transition: max-height 0.4s;
+  overflow: hidden;
+}
+
+.collapse-close-utility {
+  max-height: 0;
+  transition: max-height 0.4s;
+  overflow: hidden;
+}
+
+.collapse-open-properties {
+  max-height: 1200px;
+  transition: max-height 1.4s;
+  overflow: hidden;
+}
+
+.collapse-close-properties {
+  max-height: 0;
+  transition: max-height 0.8s;
+  overflow: hidden;
+}
+
+.level-progress {
+  div.MuiLinearProgress-root {
+    height: 6px;
+    outline: 2px solid;
+    // box-shadow: -2px -2px 4px rgba(68, 108, 108, 0.28), 2px 2px 4px rgba(0, 0, 0, 0.56);
+    @apply rounded-2xl outline-background-dark-800 bg-background-dark-600;
+
+    .MuiLinearProgress-bar {
+      background: linear-gradient(90deg, #00857e 4.03%, #1efcf1 76.15%);
+      @apply rounded-md;
+    }
+  }
+}
+
+.imput-number-wrapper {
+  background: #373d4a;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Chakra Petch';
+  line-height: 20px;
+  color: #ffffff;
+  padding: 0 10px;
+  height: 56px;
+  width: 83px;
+}
+.imput-number {
+  outline: none;
+  line-height: 20px;
+  background: #3E3F4D;
+  // width: 20px;
+}
+
+.imput-number-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.MuiTooltip-tooltipPlacementBottom {
+  font-family: 'Chakra Petch' !important;
+}
+
+#menu- div.MuiPaper-root.MuiMenu-paper li.MuiMenuItem-root.Mui-selected {
+  background-color: unset;
+  color: #b794f6;
+  font-weight: bold;
+}
+
+.scroll-filter-collections::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+}
+
+.scroll-hidden {
+  scrollbar-width: none;
+}
+
+.tab-asset {
+  .MuiTabs-scrollButtons {
+    display: none;
+  }
+  .MuiTabs-scroller {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.tooltip-text::after {
+  content: '';
+  position: absolute;
+  top: -0.6rem;
+  left: 139px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #1f262c;
+}

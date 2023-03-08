@@ -1,0 +1,45 @@
+
+// unstake modal 
+.unstake-modal {
+    @apply w-[680px] min-h-[530px] flex flex-col justify-between overflow-hidden;
+    @apply rounded-3xl bg-background-dark-600 shadow-elevation-light-1;
+  
+    .modal-title {
+      @apply text--headline-small text-white text-center;
+    }
+  
+    .item-number {
+      @apply text--headline-xsmall text-white;
+    }
+
+    .upper-part {
+        @apply px-8 pt-8;
+    }
+    .sub-part {
+        @apply bg-background-dark-700 px-8 pb-8 pt-4 ;
+    }
+    .modal-label {
+        @apply  flex items-center;
+        
+       .customize-tooltip svg {
+           @apply w-4
+       }
+    }
+    .receive-info {
+        @apply my-4;
+    }
+
+    .button-wrapper {
+        @apply w-full flex flex-row justify-end gap-4;
+    }
+    .listing {
+        @apply h-[200px] flex flex-col  gap-2 my-2 overflow-y-scroll;
+    }
+  }
+
+  //TXNBar
+  .txn-bar {
+      div.MuiPaper-root{
+          background-color: rgb(240, 240, 240);
+      }
+  }

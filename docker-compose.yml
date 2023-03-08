@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ui:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: madwolrd-market-ui
+    ports:
+      - '3101:3000'

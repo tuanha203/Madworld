@@ -1,0 +1,28 @@
+{
+    "key": "en",
+    "page": "Home",
+    "loadMore": "Load more",
+    "reset": "Reset",
+    "creator": "Creator",
+    "footer": {
+      "stack": "Stacks",
+      "market": "Market",
+      "rank": "Ranks",
+      "reward": "Rewards",
+      "info": "Info",
+      "about": "About",
+      "contact": "Contact",
+      "help": "Help",
+      "termOfService": "Terms of service",
+      "copyright": "Copyright 2022 HelixMeta | By NFT people, for NFT people",
+      "description": "Lorem Ipsum is simply dummy"
+    },
+    "header": {
+      "market": "Market",
+      "rank": "Ranks",
+      "reward": "Rewards",
+      "connectWallet": "Connect Wallet",
+      "profile": "Profile"
+    }
+  }
+  
